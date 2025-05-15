@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyJams - Share and Discover Music</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-image: url('https://source.unsplash.com/1600x900/?concert,music');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .overlay {
+            background-color: rgba(0,0,0,0.6);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .signup-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(0,0,0,0.7);
+            padding: 15px;
+            border-radius: 5px;
+            width: 280px;
+        }
+        .signup-box input[type="email"],
+        .signup-box input[type="password"],
+        .signup-box input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: none;
+        }
+        .signup-box button {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            background-color: #ff7f00;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        .content h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="header">MyJams</div>
+        <div class="signup-box">
+            <h3>Create an Account</h3>
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Sign Up</button>
+        </div>
+        <div class="content">
+            <h1>MyJams is your place to jam and discover music.</h1>
+            <p>Connect, collaborate, and create music together. Join the community and let the music flow.</p>
+        </div>
+    </div>
+</body>
+</html>
